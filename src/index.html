@@ -6,12 +6,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-    <div id="root"></div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+
     <form action="index.js">
-    </header>
       <!--DESDE AQUI EMPIEZA MI CODIGO-->
       <H1> 👀 Ocultando tu Mensaje 👀 </H1> 
       <!--Agregando los txtbox-->
@@ -19,14 +15,16 @@
       <input id="txt_offset" type="number"><br>
       <br>
       Mensaje Original:
-        <input id="txt_encode" type="text">
-        <input id="buttonnEncode" type="button" value="OCULTAR MENSAJE" ><br>
+        <textarea id="txt_encode" cols="30" rows="10"></textarea>
+        <input id="buttonEncode" type="button" value="OCULTAR MENSAJE" ><br>
         <br>
       Mensaje Oculto: 
-        <input id="txt_decode" type="text">
+        <textarea id="txt_decode" cols="30" rows="10"></textarea>
         <input id="buttonDecode" type="button" value="DESCIFRAR MENSAJE" >
       
            
     </form>
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
