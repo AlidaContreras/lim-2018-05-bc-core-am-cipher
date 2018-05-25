@@ -1,0 +1,9 @@
+body{
+    background:url(http://www.fonstola.ru/large/201307/99040.jpg);
+    background-position: initial;
+    }
+textarea,input{
+    border: sienna;
+    border-style: double; 
+    object-position: center;
+}
