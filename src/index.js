@@ -6,7 +6,7 @@ let offset,mensaje_encode,resultado,btnEncode,btnDecode;
     btnEncode=document.getElementById("buttonEncode");
     btnEncode.addEventListener("click",function(){
         mensaje_encode=document.getElementById("txt_encode").value;
-        offset=document.getElementById("txt_offset").value;  
+        offset=parseInt(document.getElementById("txt_offset").value);  
         cipher.encode(offset,mensaje_encode);
     })
     document.getElementById("txt_resultado").innerHTML=vacio;
