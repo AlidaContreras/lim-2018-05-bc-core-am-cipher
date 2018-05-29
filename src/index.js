@@ -15,8 +15,10 @@ btnEncode.addEventListener("click", function () {
 //DECODE
 btnDecode = document.getElementById("buttonDecode")
 btnDecode.addEventListener("click", function () {
-    offset = document.getElementById("txt_offset").value;
+    string = document.getElementById("txt_ingresado").value;
+    offset = parseInt(document.getElementById("txt_offset").value);
     cipher.decode(offset, string);
+    document.getElementById("txt_resultado").innerHTML=resultado;
 });
 
 
