@@ -9,7 +9,7 @@ let offset,mensaje_encode,resultado,btnEncode,btnDecode;
         offset=parseInt(document.getElementById("txt_offset").value);  
         cipher.encode(offset,mensaje_encode);
     })
-    document.getElementById("txt_resultado").innerHTML=vacio;
+    document.getElementById("txt_resultado").innerHTML=resultado;
     //DECODE
     btnDecode=document.getElementById("buttonDecode")
     btnDecode.addEventListener("click",function(){
