@@ -7,3 +7,6 @@ textarea,input{
     border-style: double; 
     
 }
+@media(min-width: 992px){
+    background-color: blue;
+}
