@@ -11,16 +11,17 @@
 
       <H1> 👀 Ocultando tu Mensaje 👀 </H1> 
       <!--Agregando los txtbox-->
-      Offset:
-      <input id="txt_offset" type="number"><br>
+      <label for = "txt_offset">Ingrese un numero:</label>
+      <input name ="txt_offset" id="txt_offset" type="number"><br>
       <br>
-      Mensaje:
-        <textarea id="txt_ingresado" cols="30" rows="10"></textarea>
-        <input id="buttonEncode" type="button" value="OCULTAR MENSAJE" ><br>
+      <label for="txt_ingresado">Escribe el mensaje que quieres ocultar:</label>
+        <textarea name="txt_ingresado" id="txt_ingresado" ></textarea>
+        <input name ="buttonEncode" id="buttonEncode" type="button" value="OCULTAR MENSAJE" ><br>
+        <input name ="buttonDecode" id="buttonDecode" type="button" value="DESCIFRAR MENSAJE" >
         <br>
-      Resultado: 
-        <textarea id="txt_resultado" cols="30" rows="10"></textarea>
-        <input id="buttonDecode" type="button" value="DESCIFRAR MENSAJE" >
+      <label for="txt_resultado">Aqui esta tu mensaje listo:</label> 
+        <textarea name="txt_resultado" id="txt_resultado" cols="30" rows="10"></textarea>
+        
       
            
     </form>
