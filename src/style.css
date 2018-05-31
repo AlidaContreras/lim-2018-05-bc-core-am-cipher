@@ -3,13 +3,12 @@ body{    position: relative;
     padding-top: 50px;
     padding-bottom: 100px;
     background: url(../img/bg-pattern.png),linear-gradient(to left,#7b4397,#dc2430);
-    
 
 }
 textarea,input{
     border: sienna;
-    border-style: double; 
-    
+    border-style: double;
+
 }
 label{
     font-family: "Helvetica";
