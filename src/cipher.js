@@ -25,7 +25,7 @@ window.cipher = {
             let posicion = string.charCodeAt(i);//con al charcodeat obtengo el numero de Posicion en el Ascci
             //aqui ya tengo el numero de Ascci; y con las condicionales veo que caso es MAYUSCULA, minuscula o espacios
             if (posicion > 64 && posicion <= 90) {
-                resultado += String.fromCharCode(((posicion - 65 -(offset%26) + 52) % 26) + 65);
+                resultado += String.fromCharCode((posicion - 90 - offset)%26 + 90);
                 // HIJKLMNOPQRSTUVWXYZABCDEFG
             }
             else if (posicion >= 97 && posicion <= 122) {

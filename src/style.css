@@ -1,21 +1,44 @@
-body{    position: relative;
+
+body{
+    position: relative;
     width: 100%;
     padding-top: 50px;
     padding-bottom: 100px;
-    background: url(../img/bg-pattern.png),linear-gradient(to left,#7b4397,#dc2430);
-
+		background: url(../img/bg-pattern.png),linear-gradient(to left,#7b4397,#dc2430);
 }
-textarea,input{
+form{
+	width: 40%;
+	margin: 100px auto;
+	text-align: center;
+	position: relative;
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+}
+h1{
+	font-family: 'Playfair Display SC', serif;
+	width: 100%;
+}
+textarea{
     border: sienna;
     border-style: double;
+		font-family: 'Comfortaa', cursive;
+		width: 30%;
+		min-height: 80px;
+		
+}
+form{
+	display:flex;
+}
 
-}
-label{
-    font-family: "Helvetica";
-  font-weight: 200;
-  letter-spacing: 1px;
-  color: aliceblue;
-}
+
+
+
 
 @media only screen and (max-width: 600px) {
     body {

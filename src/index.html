@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <form action="index.js">
-      <!--DESDE AQUI EMPIEZA MI CODIGO-->
 
-      <h1> 👀 Ocultando tu Mensaje 👀 </h1> 
-      <!--Agregando los txtbox-->
-      <label for = "txt_offset">Ingrese un numero:</label>
-      <input name ="txt_offset" id="txt_offset" type="number"><br>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Acme|Archivo+Black|Comfortaa" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--DESDE AQUI EMPIEZA MI CODIGO-->
+  <header>
+    <h1> 👀 Ocultando tu Mensaje 👀 </h1>
+  </header>
+  <!--Agregando los txtbox-->
+  <form>
+    <!-- este es el div de offset, ingrese mensaje y resultado -->
+    <div id="txt">
+      <label for="txt_offset">Ingrese un numero:</label>
+      <input name="txt_offset" id="txt_offset" type="number" min=1>
       <br>
-      <label for="txt_ingresado">Escribe el mensaje que quieres ocultar:</label>
-        <textarea name="txt_ingresado" id="txt_ingresado" ></textarea>
-        <input name ="buttonEncode" id="buttonEncode" type="button" value="OCULTAR MENSAJE" ><br>
-        <input name ="buttonDecode" id="buttonDecode" type="button" value="DESCIFRAR MENSAJE" >
-        <br>
-      <label for="txt_resultado">Aqui esta tu mensaje listo:</label> 
-        <textarea name="txt_resultado" id="txt_resultado" cols="30" rows="10"></textarea>
-    </form>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+      <br>
+      <textarea name="txt_ingresado" id="txt_ingresado" placeholder="Escribe tu mensaje aqui"></textarea>
+      <br>
+      <br>
+      <textarea name="txt_resultado" id="txt_resultado" placeholder="Aqui verás tu nuevo mensaje " readonly></textarea>
+    </div>
+    <!-- Este div tiene a los botones -->
+    <div id="buttons">
+      <div>
+      <input name="buttonEncode" id="buttonEncode" type="button" value="OCULTAR MENSAJE">
+      <br>
+      <br>
+      <input name="buttonDecode" id="buttonDecode" type="button" value="DESCIFRAR MENSAJE">
+      </div>
+      <div>
+      <input name="clear" id="buttonClear" type="button" value="EMPEZAR DE NUEVO">
+      </div>
+    </div>
+  
+
+  </form>
+
+  <!-- Estas son las conecciones con el JS -->
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
