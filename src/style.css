@@ -1,45 +1,51 @@
-
 body{
-    position: relative;
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 100px;
-		background: url(../img/bg-pattern.png),linear-gradient(to left,#7b4397,#dc2430);
+		padding: 1%;
+		background: url(../img/bg-pattern.png),linear-gradient(to left,#24aaf7ec,#ee2647);
 }
 form{
-	width: 40%;
-	margin: 100px auto;
+  margin-top: 5%;
 	text-align: center;
-	position: relative;
-	background: white;
-	border: 0 none;
+	margin: auto;	
 	border-radius: 3px;
-	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-	padding: 20px 30px;
-	box-sizing: border-box;
-	width: 80%;
-	margin: 0 10%;
+	box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.4);
+	padding: 3% 2% 10%;
+	background-color:rgb(250, 250, 250, 0.5);
+	width: 60%;
 }
 h1{
-	font-family: 'Playfair Display SC', serif;
+		font-family: 'Playfair Display SC', serif;
 	width: 100%;
+	text-align: center;
+	margin-bottom: 5%;
+	margin-top: 3%;
+
 }
 textarea{
     border: sienna;
     border-style: double;
 		font-family: 'Comfortaa', cursive;
-		width: 30%;
-		min-height: 80px;
-		
+		width: 90%;
+		min-height: 60%;
 }
 form{
 	display:flex;
 }
+#txt{
+	width:50%;
+}
+#buttons{
+	width: 10%;
+	margin: auto;
+}
+#buttonEncode{
+	/* background: -webkit-linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(26,188,156,1) 100%); */
+	/* background: linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(26,188,156,1) 100%); */
+	
 
 
-
-
-
+}
+		
 @media only screen and (max-width: 600px) {
     body {
         background-color: lightblue;
