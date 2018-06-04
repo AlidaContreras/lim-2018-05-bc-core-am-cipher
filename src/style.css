@@ -1,30 +1,27 @@
 body{
-    
-	
-		background: 	linear-gradient(rgba(241, 10, 48, 0.6), rgba(20, 79, 240, 0.6));
+		background: linear-gradient(rgba(241, 10, 48, 0.6), rgba(20, 79, 240, 0.6));
 		background-repeat: no-repeat;
-		height: 100vh;
-		width: 100vw;	
-		background-position: center center;
+		height: 100%;
+		width: 100%;	
+		/* background-position: center; */
 }
 h1{
 	font-family: 'Bungee Inline', cursive;
-	font-size: 230%;
+	font-size: 200%;
 	width: 100%;
 	text-align: center;
 	margin-bottom: 0.5%;
 	margin-top: 0.5%;
 }
 form{
-  margin-top: 5%;
-	text-align: center;
+  text-align: center;
 	margin: auto;	
 	border-radius: 3px;
 	box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.4);
-	padding: 3% 2% 10%;
+	padding: 4% 2% 10%;
 	background-color:rgb(250, 250, 250, 0.5);
-	width: 600px;
-	height: 220px;
+	width: 900px;
+	height: 50vh;
 	display:flex;
 }
 textarea{
@@ -32,18 +29,17 @@ textarea{
     border-style: double;
 		font-family: 'Comfortaa', cursive;
 		width: 90%;
-		height: 100px;
+		height: 25vh;
 }
-
 .txt{
 	width:50%;
 }
 .buttons{
 	font-family: 'Cabin Sketch', cursive;
-	width: 200px;
+	width: 400px;
 	background: linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(26,188,156,1) 100%);
 	margin: 30px;
-	font-size: 1em;
+	font-size: 2em;
 	padding: 5px;
 	border-radius: 10%;
 }
@@ -59,13 +55,13 @@ label{
 footer{
 	font-family: 'Arima Madurai', cursive;
 	text-align: center;
+	font-size: 1em;
+	padding: 5% ;
 }
 		
 @media (max-width: 768px) {
-
-   
-		form{
-			background-color: red;
+	form{
+			background-color: linear-gradient(rgba(230, 152, 7, 0.6), rgba(101, 240, 20, 0.6));
 			height: 500px;
 		}
 		
