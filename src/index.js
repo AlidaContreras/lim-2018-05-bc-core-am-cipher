@@ -1,24 +1,33 @@
-let offset, string, resultado, btnEncode, btnDecode;
+let offset, string, resultado, btnEncode, btnDecode,btnClear;
 //se tiene que declarar la variable que llama a cada ID de los textbox
 //dentro de cada evento porque si no esta dentro cuando se haga clic no va a poder encontrarlo
 //Coneccion de los botones
 //ENCODE
 btnEncode = document.getElementById("buttonEncode");
 btnEncode.addEventListener("click", () => {
-    string = document.getElementById("txt_ingresado").value;
-    offset = parseInt(document.getElementById("txt_offset").value);
-    resultado = cipher.encode(offset, string);
-    document.getElementById("txt_resultado").innerHTML= resultado;
+	string = document.getElementById("txt_ingresado").value.toUpperCase();
+	offset = parseInt(document.getElementById("txt_offset").value);
+	resultado = cipher.encode(offset, string);
+	document.getElementById("txt_resultado").innerHTML = resultado;
 })
 
 //DECODE
 btnDecode = document.getElementById("buttonDecode")
 btnDecode.addEventListener("click", function () {
-    string = document.getElementById("txt_ingresado").value;
-    offset = parseInt(document.getElementById("txt_offset").value);
-    resultado = cipher.decode(offset, string);
-    document.getElementById("txt_resultado").innerHTML=resultado;
+	string = document.getElementById("txt_ingresado").value;
+	offset = parseInt(document.getElementById("txt_offset").value);
+	resultado = cipher.decode(offset, string);
+	document.getElementById("txt_resultado").innerHTML = resultado;
 });
+
+//CLEAR
+btnClear = document.getElementById("clear");
+btnClear.addEventListener("click", function () {
+	document.getElementById("txt_ingresado").value = "";
+	document.getElementById("txt_ingresado").value = "";
+	document.getElementById("txt_offset").value = "";
+	document.getElementById("txt_resultado").value = "";
+})
 
 
 

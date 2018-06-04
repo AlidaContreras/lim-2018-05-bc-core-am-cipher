@@ -1,7 +1,15 @@
 body{
     width: 100%;
 		padding: 1%;
-		background: url(../img/bg-pattern.png),linear-gradient(to left,#24aaf7ec,#ee2647);
+		background: 	linear-gradient(rgba(241, 10, 48, 0.6), rgba(20, 79, 240, 0.6));
+}
+h1{
+	font-family: 'Bungee Inline', cursive;
+	font-size: 230%;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 1%;
+	margin-top: 1%;
 }
 form{
   margin-top: 5%;
@@ -11,43 +19,44 @@ form{
 	box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.4);
 	padding: 3% 2% 10%;
 	background-color:rgb(250, 250, 250, 0.5);
-	width: 60%;
-}
-h1{
-		font-family: 'Playfair Display SC', serif;
-	width: 100%;
-	text-align: center;
-	margin-bottom: 5%;
-	margin-top: 3%;
-
+	width: 600px;
+	height: 220px;
+	display:flex;
 }
 textarea{
     border: sienna;
     border-style: double;
 		font-family: 'Comfortaa', cursive;
 		width: 90%;
-		min-height: 60%;
+		height: 100px;
 }
-form{
-	display:flex;
-}
-#txt{
+
+.txt{
 	width:50%;
 }
-#buttons{
-	width: 10%;
-	margin: auto;
+.buttons{
+	font-family: 'Cabin Sketch', cursive;
+	width: 200px;
+	background: linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(26,188,156,1) 100%);
+	margin: 30px;
+	font-size: 1em;
+	padding: 5px;
+	border-radius: 10%;
 }
-#buttonEncode{
-	/* background: -webkit-linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(26,188,156,1) 100%); */
-	/* background: linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(26,188,156,1) 100%); */
-	
+.buttons:hover {
+	background-color: #e4121c;
+	color: antiquewhite;
+	font-size: 1.2em;
+	width: 230px;
+}
 
-
+label{
+	font-family: 'Comfortaa', cursive;
 }
 		
 @media only screen and (max-width: 600px) {
     body {
         background-color: lightblue;
-    }
+		}
+		
 }
