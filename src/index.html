@@ -2,7 +2,8 @@
 <html>
 
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Acme|Archivo+Black|Comfortaa" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Archivo+Black|Comfortaa|Open+Sans|Roboto|Cabin+Sketch" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
   <meta charset="utf-8">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
@@ -11,14 +12,14 @@
 <body>
   <!--DESDE AQUI EMPIEZA MI CODIGO-->
   <header>
-    <h1> 👀 Ocultando tu Mensaje 👀 </h1>
+    <h1> 👀 OCULTANDO TU MENSAJE 👀 </h1>
   </header>
   <!--Agregando los txtbox-->
   <form>
     <!-- este es el div de offset, ingrese mensaje y resultado -->
-    <div id="txt">
+    <div class="txt">
       <label for="txt_offset">Ingrese un numero:</label>
-      <input name="txt_offset" id="txt_offset" type="number" min=1>
+      <input name="txt_offset" id="txt_offset" type="number" min="1">
       <br>
       <br>
       <textarea name="txt_ingresado" id="txt_ingresado" placeholder="Escribe tu mensaje aqui"></textarea>
@@ -27,15 +28,16 @@
       <textarea name="txt_resultado" id="txt_resultado" placeholder="Aqui verás tu nuevo mensaje " readonly></textarea>
     </div>
     <!-- Este div tiene a los botones -->
-    <div id="buttons">
-      <div>
-      <input name="buttonEncode" id="buttonEncode" type="button" value="OCULTAR MENSAJE">
+    <div >
+      <div  >
+      <input name="Encode"  type="button" value="OCULTAR MENSAJE" id="buttonEncode" class="buttons">
       <br>
       <br>
-      <input name="buttonDecode" id="buttonDecode" type="button" value="DESCIFRAR MENSAJE">
+      <input name="buttonDecode" id="buttonDecode" type="button" value="DESCIFRAR MENSAJE" class="buttons"  >
       </div>
       <div>
-      <input name="clear" id="buttonClear" type="button" value="EMPEZAR DE NUEVO">
+        <br>
+      <input name="clear" type="button" value="EMPEZAR DE NUEVO"  id="clear" class="buttons">
       </div>
     </div>
   
