@@ -9,6 +9,7 @@ btnEncode.addEventListener("click", () => {
 	offset = parseInt(document.getElementById("txt_offset").value);
 	resultado = cipher.encode(offset, string);
 	document.getElementById("txt_resultado").innerHTML = resultado;
+
 })
 
 //DECODE
@@ -20,14 +21,14 @@ btnDecode.addEventListener("click", function () {
 	document.getElementById("txt_resultado").innerHTML = resultado;
 });
 
-//CLEAR
-btnClear = document.getElementById("clear");
-btnClear.addEventListener("click", function () {
-	document.getElementById("txt_ingresado").value = "";
-	document.getElementById("txt_ingresado").value = "";
-	document.getElementById("txt_offset").value = "";
-	document.getElementById("txt_resultado").value = "";
-})
+// //CLEAR
+// btnClear = document.getElementById("clear");
+// btnClear.addEventListener("click", function () {
+// 	document.getElementById("txt_ingresado").value = "";
+// 	document.getElementById("txt_ingresado").value = "";
+// 	document.getElementById("txt_offset").value = "";
+// 	document.getElementById("txt_resultado").value = "";
+// })
 
 
 
