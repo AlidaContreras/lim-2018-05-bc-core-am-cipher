@@ -61,9 +61,12 @@ footer{
 	text-align: center;
 }
 		
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
+@media (max-width: 768px) {
+
+   
+		form{
+			background-color: red;
+			height: 500px;
 		}
 		
 }
